@@ -1,0 +1,18 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"cSpell.words": [
+			"Isogen",
+			"Megacyte",
+			"Nocxium",
+			"Spodumain",
+			"Tritanium",
+			"Zydrine"
+		],
+		"liveServer.settings.port": 5501
+	}
+}

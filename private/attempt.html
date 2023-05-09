@@ -1,0 +1,73 @@
+<html>
+  <head>
+    <title>EVE Online Industry Cost Output</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        //list all jobs queued
+        $("#list-jobs").click(function(){
+          $.getJSON('http://api.eveonline.com/industry/jobs', function(data){
+            var jobList = '<ul>';
+            for (var i=0;i<data.length;i++){
+              jobList += '<li>' + data[i].jobName + '</li>';
+            }
+            jobList += '</ul>';
+            $("#job-list").html(jobList);
+          })
+        });
+        //dropdown to select what to build
+        $("#select-build").change(function(){
+          var selectedBuild = $(this).val();
+          $.getJSON('http://api.eveonline.com/industry/buildcost/'+selectedBuild, function(data){
+            var costOutput = '<h2>Cost of Building '+selectedBuild+':</h2><ul>';
+            for (var i=0;i<data.length;i++){
+              costOutput += '<li>' + data[i].materialName + ': ' + data[i].quantity + '</li>';
+            }
+            costOutput += '</ul>';
+            $("#cost-output").html(costOutput);
+          });
+        });
+        //way to add or subtract from the quantity
+        $("#add-subtract").click(function(){
+          var quantity = parseInt($("#quantity").val());
+          if ($(this).text() == 'Add'){
+            quantity++;
+          } else {
+            quantity--;
+          }
+          $("#quantity").val(quantity);
+        });
+        //dropdown from which the user could select from public structure/stations
+        $.getJSON('http://api.eveonline.com/industry/publicstructures', function(data){
+          var stationDropdown = '<select id="station-dropdown">';
+          for (var i=0;i<data.length;i++){
+            stationDropdown += '<option value="'+data[i].name+'">'+data[i].name+'</option>';
+          }
+          stationDropdown += '</select>';
+          $("#station-dropdown-container").html(stationDropdown);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h1>EVE Online Industry Cost Output</h1>
+    <div>
+      <button id="list-jobs">List Jobs Queued</button>
+      <div id="job-list"></div>
+    </div>
+    <div>
+      <select id="select-build">
+        <option value="ship">Ship</option>
+        <option value="module">Module</option>
+        <option value="ammo">Ammo</option>
+      </select>
+      <input type="number" id="quantity" value="1" />
+      <button id="add-subtract">Add</button>
+      <button id="add-subtract">Subtract</button>
+    </div>
+    <div>
+      Select from public structure/stations: 
+      <div id="station-dropdown-container"></div>
+    </div>
+    <div id="cost-output"></div>
+  </body

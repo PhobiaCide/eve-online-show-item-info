@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Show Item Info</title>
+  <meta charset="UTF-8" />
+
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body class="app">
+
+  <header>
+
+    <img src="" height="64px" width="64" />
+
+    <h1>
+      EVE Online | Show Item Info
+    </h1>
+
+    <a href="" id="user-account">
+      <img src="" height="64px" width="64" id="user-profile" />
+    </a>
+
+  </header>
+  <main>
+
+    <form id="user-input" onsubmit="handleFormSubmit">
+
+      <span class="input-wrapper">
+        <label for="category-input">Category: </label>
+        <input id="category-input" type="text" name="category" placeholder="Begin typing a category name...">
+        <!-- populate with available categories -->
+        </input>
+      </span>
+
+      <span class="input-wrapper">
+        <label for="group-input">Group: </label>
+        <input id="group-input" type="text" name="group" placeholder="Begin typing a group name..." disabled>
+        <!-- populate with available groups based on selected category -->
+        </input>
+      </span>
+
+      <span class="input-wrapper">
+        <label for="type-input">Type: </label>
+        <input id="type-input" type="text" name="type" placeholder="Begin typing a type name..." disabled>
+        <!-- populate with available types based on selected group -->
+        </input>
+      </span>
+
+    </form>
+    <div class="output">
+
+      <table id="item-info">
+
+        <tr>
+          <td rowspan="2"></td>
+          <td id="item-image" rowspan="2">
+            <img src="https://images.evetech.net/types/19/icon" width="128" height="128" />
+          </td>
+        </tr>
+
+        <tr>
+          <td id="item-name">
+            <h2>Spodumain</h2>
+          </td>
+          <td id="estimated-value">
+            <h3>Estimated Value:</h3>
+
+            <h2>Ƶ0.00</h2>
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="1"></td>
+          <td colspan="3" id="item-description">
+            Spodumain is amongst the most desirable ore types around, as it
+            contains high volumes of the most heavily demanded resource and
+            some amounts of the more precious minerals. Huge volumes of
+            <a href="showinfo:34">Tritanium</a> and moderate amounts of
+            <a href="showinfo:37">Isogen</a>,
+            <a href="showinfo:38">Nocxium</a>,
+            <a href="showinfo:39">Zydrine</a> and
+            <a href="showinfo:40">Megacyte</a> can be obtained by refining
+            these rocks.
+          </td>
+        </tr>
+
+      </table>
+      <div id="item-info">
+
+        <section id="tabs">
+          <span class="tab-list">
+            <a class="tab-link" href="#tab-variations">Variations</a>
+            <a class="tab-link" href="#tab-used-with">Used With</a>
+            <a class="tab-link" href="#tab-attributes">Attributes</a>
+            <a class="tab-link" href="#tab-skills">Skills Needed</a>
+            <a class="tab-link" href="#tab-industry">Material Cost</a>
+          </span>
+        </section>
+
+        <section id="item-details">
+
+          <span id="tab-market-price" class="tab-content">
+            <!-- display market price information here -->
+            <p>This is the area for market information</p>
+          </span>
+
+          <span id="tab-variations" class="tab-content">
+            <!-- display variations information here -->
+            <p>This is the area for item variations</p>
+          </span>
+
+          <span id="tab-used-with" class="tab-content">
+            <!-- display used with information here -->
+            <p>This is the area for used with</p>
+          </span>
+
+          <span id="tab-attributes" class="tab-content">
+            <!-- display attributes information here -->
+            <p>This is the area form attributes</p>
+          </span>
+
+          <span id="tab-skills" class="tab-content">
+            <!-- display skills information here -->
+            <p>This is the area for skills</p>
+          </span>
+
+          <span id="tab-material-cost" class="tab-content">
+            <!-- display material cost information here -->
+            <p>This is the area for material cost</p>
+          </span>
+
+        </section>
+      </div>
+
+    </div><!--#output-->
+    
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Show Item Info</title>
+  <meta charset="UTF-8" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
+    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+
+  <header>
+    <section>
+
+      <h1>
+        EVE Online Web App
+      </h1>
+
+      <h2>
+        Show Item Info
+      </h2>
+
+    </section>
+  </header>
+  <div id="show-item-info">
+    <main>
+
+      <form id="user-input" onsubmit="handleFormSubmit">
+
+        <span class="input-wrapper">
+          <div class="dropdown">
+            <input type="text" id="category-select" class="input" readonly placeholder="Custom Dropdown">
+            <div class="option">
+              <div onmouseover="show('Hell')">Hell</div>
+              <div onmouseover="show('Yeah')">Yeah</div>
+              <div onmouseover="show('This')">This</div>
+              <div onmouseover="show('Looks')">Looks</div>
+              <div onmouseover="show('Good')">Good</div>
+            </div>
+          </div>
+          <!--
+          <input id="category-input" type="text" name="category" placeholder="Begin typing a category name..."
+            autofocus>
+          -->
+          <!-- populate with available categories -->
+          </input>
+
+        </span>
+
+        <span class="input-wrapper">
+          <input id="group-input" type="text" name="group" placeholder="Begin typing a group name..." disabled>
+          <!-- populate with available groups based on selected category -->
+          </input>
+        </span>
+
+        <span class="input-wrapper">
+          <input id="type-input" type="text" name="type" placeholder="Begin typing a type name...">
+          <!-- populate with available types based on selected group -->
+          </input>
+        </span>
+
+      </form>
+      <div id="item-info" class="output">
+
+        <table>
+          <thead>
+            <tr>
+
+              <th id="type-name">
+                <h2>Spodumain</h2>
+              </th>
+
+              <th id="estimated-value">
+                <h4>Estimated Value:</h4>
+                <h3>&nbsp;Ƶ0.00</h3>
+              </th>
+
+            </tr>
+
+            <tr>
+              <th id="type-image">
+                <img src="https://images.evetech.net/types/19/icon?size=1024" width="96" height="96" />
+              </th>
+
+              <td id="type-description">
+                Spodumain is amongst the most desirable ore types around, as it
+                contains high volumes of the most heavily demanded resource and
+                some amounts of the more precious minerals. Huge volumes of
+                <a href="showinfo:34">Tritanium</a> and moderate amounts of
+                <a href="showinfo:37">Isogen</a>,
+                <a href="showinfo:38">Nocxium</a>,
+                <a href="showinfo:39">Zydrine</a> and
+                <a href="showinfo:40">Megacyte</a> can be obtained by refining
+                these rocks.
+              </td>
+            </tr>
+
+        </table>
+        <div>
+
+          <section id="tabs">
+            <span class="tab-list">
+              <a class="tab-link" href="#tab-attributes">Attributes</a>
+              <a class="tab-link" href="#tab-fitting">Fitting</a>
+              <a class="tab-link" href="#tab-requirements">Requirements</a>
+              <a class="tab-link" href="#tab-variations">Variations</a>
+              <a class="tab-link" href="#tab-used-with">Used With</a>
+              <a class="tab-link" href="#tab-industry">Industry</a>
+            </span>
+          </section>
+
+          <section id="item-details" class="tab-content">
+
+            <span id="initial-output">
+
+            </span>
+
+            <span id="tab-market-price" class="tab-content hidden">
+              <!-- display market price information here -->
+              <p>This is the area for market information</p>
+            </span>
+
+            <span id="tab-variations" class="tab-content hidden">
+              <!-- display variations information here -->
+              <p>This is the area for item variations</p>
+            </span>
+
+            <span id="tab-used-with" class="tab-content hidden">
+              <!-- display used with information here -->
+              <p>This is the area for used with</p>
+            </span>
+
+            <span id="tab-attributes" class="tab-content hidden">
+              <!-- display attributes information here -->
+              <p>This is the area form attributes</p>
+            </span>
+
+            <span id="tab-skills" class="tab-content hidden">
+              <!-- display skills information here -->
+              <p>This is the area for skills</p>
+            </span>
+
+            <span id="tab-material-cost" class="tab-content hidden">
+              <!-- display material cost information here -->
+              <p>This is the area for material cost</p>
+            </span>
+          </section>
+        </div>
+      </div>
+    </main>
+    <footer>
+      Footer
+    </footer>
+  </div>
+  <script src="script.js"></script>
+
+  <script>
+
+    function show(a) {
+      document.querySelector('.text02').value = a;
+    }
+    const dropdown = document.querySelector('.dropdown');
+    dropdown.onclick = () => {
+      dropdown.classList.toggle('active');
+    }
+
+  </script>
+
+</body>
+
+</html>
