@@ -1,8 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Amaranth&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 =======
 @import "https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900";
 >>>>>>> 090c226 (optimize css)
+=======
+@import "https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900";
+>>>>>>> 090c226c17afc7140418fe371afb73b224d0f019
 
 #estimated-value
 {
@@ -46,9 +50,12 @@
 #type-description
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
 	font-size: 16px;
 =======
 >>>>>>> 090c226 (optimize css)
+=======
+>>>>>>> 090c226c17afc7140418fe371afb73b224d0f019
 	background-color:rgba(151,151,201,1);
 	border-radius:15px;
 	padding:9px
@@ -93,11 +100,14 @@
 	--one-quarter-gray:64,64,64;
 	--three-quarters-gray:192,192,192
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 	--body-font-family: 'Open Sans', sans-serif;
 	--header-font-family: 'Amaranth', sans-serif;
 =======
 >>>>>>> 090c226 (optimize css)
+=======
+>>>>>>> 090c226c17afc7140418fe371afb73b224d0f019
 }
 
 .dropdown
@@ -109,6 +119,7 @@
 {
 	background:rgba(var(--off-white),1);
 	border:1px solid gold;
+<<<<<<< HEAD
 <<<<<<< HEAD
 	border-radius:1px 1px 15px 15px;
 	border-top:none;
@@ -122,6 +133,8 @@
 	visibility:hidden;
 	width:94%
 =======
+=======
+>>>>>>> 090c226c17afc7140418fe371afb73b224d0f019
 	border-radius:0 0 15px 15px;
 	border-top:0;
 	box-shadow:3px 3px 3px rgba(0,0,0,0.5);
@@ -133,7 +146,10 @@
 	transition:.3s;
 	visibility:hidden;
 	width:98%
+<<<<<<< HEAD
 >>>>>>> 090c226 (optimize css)
+=======
+>>>>>>> 090c226c17afc7140418fe371afb73b224d0f019
 }
 
 .dropdown .option div
@@ -146,12 +162,17 @@
 .dropdown .option div:hover
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
 	background-image:radial-gradient(rgba(255,215,0,.8) 30%,rgba(0,0,0,0));
 	border-radius:1px;
 =======
 	background-image:linear-gradient(90deg,rgba(255,215,0,1) 75%,rgba(0,0,0,0));
 	border-radius:5px;
 >>>>>>> 090c226 (optimize css)
+=======
+	background-image:linear-gradient(90deg,rgba(255,215,0,1) 75%,rgba(0,0,0,0));
+	border-radius:5px;
+>>>>>>> 090c226c17afc7140418fe371afb73b224d0f019
 	font-size:15px;
 	font-weight:750
 }
@@ -251,10 +272,14 @@
 body
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
 	font-family: 'Open Sans', sans-serif;
 =======
 	font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif,sans-serif;
 >>>>>>> 090c226 (optimize css)
+=======
+	font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif,sans-serif;
+>>>>>>> 090c226c17afc7140418fe371afb73b224d0f019
 	max-width:100vw;
 	padding:3px
 }
@@ -274,10 +299,14 @@ h1,h2,h3,h4,h5,h6
 {
 	color:gold;
 <<<<<<< HEAD
+<<<<<<< HEAD
 	font-family: 'Amaranth', sans-serif;
 =======
 	font-family:"Spectral",serif,"Source Sans Pro",sans-serif;
 >>>>>>> 090c226 (optimize css)
+=======
+	font-family:"Spectral",serif,"Source Sans Pro",sans-serif;
+>>>>>>> 090c226c17afc7140418fe371afb73b224d0f019
 	text-shadow:1px 1px 1px black
 }
 
@@ -315,10 +344,14 @@ header > section > h2
 html
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
 	background-image:linear-gradient(90deg, rgba(50,50,106,1) 0%,rgba(100,100,156,1) 15%,rgba(100,100,156,1) 85%,rgba(50,50,106,1) 100%);
 =======
 	background-image:linear-gradient(90deg,rgba(50,50,106,1) 0%,rgba(100,100,156,1) 15%,rgba(100,100,156,1) 85%,rgba(50,50,106,1) 100%);
 >>>>>>> 090c226 (optimize css)
+=======
+	background-image:linear-gradient(90deg,rgba(50,50,106,1) 0%,rgba(100,100,156,1) 15%,rgba(100,100,156,1) 85%,rgba(50,50,106,1) 100%);
+>>>>>>> 090c226c17afc7140418fe371afb73b224d0f019
 	height:100%;
 	overflow-x:hidden;
 	width:100%
