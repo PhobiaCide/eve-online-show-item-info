@@ -8,19 +8,19 @@
 #estimated-value > h3
 {
 	color:green;
-	font-size:16px;
+	font-size:18px;
 	font-weight:720
 }
 
 #estimated-value > h4
 {
-	font-size:13px
+	font-size:14px
 }
 
 #item-details
 {
 	background-color:rgba(var(--off-white),1);
-	border:4px outset silver;
+	border:4px inset silver;
 	border-radius:1px 1px 15px 15px;
 	border-top:0;
 	box-shadow:6px 6px 6px rgba(0,0,0,0.0);
@@ -41,6 +41,7 @@
 
 #type-description
 {
+	text-align: center;
 	font-size: 16px;
 	background-color:rgba(151,151,201,1);
 	border-radius:15px;
@@ -185,7 +186,7 @@
 .tab-link
 {
 	background-color:rgba(151,151,201,1);
-	border:4px outset silver;
+	border:4px inset silver;
 	border-bottom:none;
 	border-radius:15px 15px 0 0;
 	color:gold;
