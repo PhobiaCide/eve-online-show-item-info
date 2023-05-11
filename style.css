@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Amaranth&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+=======
+@import "https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900";
+>>>>>>> 090c226 (optimize css)
 
 #estimated-value
 {
@@ -41,7 +45,10 @@
 
 #type-description
 {
+<<<<<<< HEAD
 	font-size: 16px;
+=======
+>>>>>>> 090c226 (optimize css)
 	background-color:rgba(151,151,201,1);
 	border-radius:15px;
 	padding:9px
@@ -85,9 +92,12 @@
 	--off-white:248,240,227;
 	--one-quarter-gray:64,64,64;
 	--three-quarters-gray:192,192,192
+<<<<<<< HEAD
 
 	--body-font-family: 'Open Sans', sans-serif;
 	--header-font-family: 'Amaranth', sans-serif;
+=======
+>>>>>>> 090c226 (optimize css)
 }
 
 .dropdown
@@ -99,6 +109,7 @@
 {
 	background:rgba(var(--off-white),1);
 	border:1px solid gold;
+<<<<<<< HEAD
 	border-radius:1px 1px 15px 15px;
 	border-top:none;
 	box-shadow:3px 6px 3px rgba(0,0,0,0.5);
@@ -110,6 +121,19 @@
 	transition:.3s;
 	visibility:hidden;
 	width:94%
+=======
+	border-radius:0 0 15px 15px;
+	border-top:0;
+	box-shadow:3px 3px 3px rgba(0,0,0,0.5);
+	left:1%;
+	opacity:0;
+	overflow:hidden;
+	position:absolute;
+	top:24px;
+	transition:.3s;
+	visibility:hidden;
+	width:98%
+>>>>>>> 090c226 (optimize css)
 }
 
 .dropdown .option div
@@ -121,8 +145,13 @@
 
 .dropdown .option div:hover
 {
+<<<<<<< HEAD
 	background-image:radial-gradient(rgba(255,215,0,.8) 30%,rgba(0,0,0,0));
 	border-radius:1px;
+=======
+	background-image:linear-gradient(90deg,rgba(255,215,0,1) 75%,rgba(0,0,0,0));
+	border-radius:5px;
+>>>>>>> 090c226 (optimize css)
 	font-size:15px;
 	font-weight:750
 }
@@ -221,7 +250,11 @@
 
 body
 {
+<<<<<<< HEAD
 	font-family: 'Open Sans', sans-serif;
+=======
+	font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif,sans-serif;
+>>>>>>> 090c226 (optimize css)
 	max-width:100vw;
 	padding:3px
 }
@@ -240,7 +273,11 @@ form
 h1,h2,h3,h4,h5,h6
 {
 	color:gold;
+<<<<<<< HEAD
 	font-family: 'Amaranth', sans-serif;
+=======
+	font-family:"Spectral",serif,"Source Sans Pro",sans-serif;
+>>>>>>> 090c226 (optimize css)
 	text-shadow:1px 1px 1px black
 }
 
@@ -277,7 +314,11 @@ header > section > h2
 
 html
 {
+<<<<<<< HEAD
 	background-image:linear-gradient(90deg, rgba(50,50,106,1) 0%,rgba(100,100,156,1) 15%,rgba(100,100,156,1) 85%,rgba(50,50,106,1) 100%);
+=======
+	background-image:linear-gradient(90deg,rgba(50,50,106,1) 0%,rgba(100,100,156,1) 15%,rgba(100,100,156,1) 85%,rgba(50,50,106,1) 100%);
+>>>>>>> 090c226 (optimize css)
 	height:100%;
 	overflow-x:hidden;
 	width:100%
