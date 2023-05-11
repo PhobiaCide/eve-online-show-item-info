@@ -11,14 +11,18 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
     rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
 
   <link rel="stylesheet" href="style.css" />
 
@@ -30,11 +34,11 @@
     <section>
 
       <h1>
-        EVE Online Web App
+        Eve&nbsp;Online&nbsp;Web&nbsp;App
       </h1>
 
       <h2>
-        Show Item Info
+        Show&nbsp;Item&nbsp;Info
       </h2>
 
     </section>
@@ -46,7 +50,7 @@
 
         <span class="input-wrapper">
           <div class="dropdown">
-            <input type="text" id="category-select" class="input" readonly placeholder="Custom Dropdown">
+            <input type="text" id="category-select" class="input" readonly placeholder="Select&nbsp;Category">
             <div class="option">
               <div onmouseover="show('Hell')">Hell</div>
               <div onmouseover="show('Yeah')">Yeah</div>
@@ -71,7 +75,7 @@
         </span>
 
         <span class="input-wrapper">
-          <input id="type-input" type="text" name="type" placeholder="Begin typing a type name...">
+          <input id="type-input" type="text" name="type" placeholder="Begin&nbsp;typing&nbsp;a&nbsp;type&nbsp;name...">
           <!-- populate with available types based on selected group -->
           </input>
         </span>
@@ -88,8 +92,8 @@
               </th>
 
               <th id="estimated-value">
-                <h4>Estimated Value:</h4>
-                <h3>&nbsp;Ƶ0.00</h3>
+                <h4>Estimated&nbsp;Value:</h4>
+                <h3>Ƶ0.00</h3>
               </th>
 
             </tr>
@@ -117,7 +121,7 @@
 
           <section id="tabs">
             <span class="tab-list">
-              <a class="tab-link" href="#tab-attributes">Attributes</a>
+              <a class="tab-link" href="#tab-attributes" active>Attributes</a>
               <a class="tab-link" href="#tab-fitting">Fitting</a>
               <a class="tab-link" href="#tab-requirements">Requirements</a>
               <a class="tab-link" href="#tab-variations">Variations</a>
@@ -126,14 +130,20 @@
             </span>
           </section>
 
-          <section id="item-details" class="tab-content">
+          <section id="item-details">
 
-            <span id="initial-output">
-
+            <span id="tab-attributes" class="tab-content">
+              <!-- display attributes information here -->
+              <p>This is the area form attributes</p>
             </span>
 
-            <span id="tab-market-price" class="tab-content hidden">
-              <!-- display market price information here -->
+            <span id="tab-fitting" class="tab-content hidden">
+              <!-- display fitting information here -->
+              <p>This is the area for skills</p>
+            </span>
+
+            <span id="tab-requirements" class="tab-content hidden">
+              <!-- display requirements information here -->
               <p>This is the area for market information</p>
             </span>
 
@@ -147,18 +157,8 @@
               <p>This is the area for used with</p>
             </span>
 
-            <span id="tab-attributes" class="tab-content hidden">
-              <!-- display attributes information here -->
-              <p>This is the area form attributes</p>
-            </span>
-
-            <span id="tab-skills" class="tab-content hidden">
-              <!-- display skills information here -->
-              <p>This is the area for skills</p>
-            </span>
-
-            <span id="tab-material-cost" class="tab-content hidden">
-              <!-- display material cost information here -->
+            <span id="tab-industry" class="tab-content hidden">
+              <!-- display industry information here -->
               <p>This is the area for material cost</p>
             </span>
           </section>
@@ -169,12 +169,13 @@
       Footer
     </footer>
   </div>
+  
   <script src="script.js"></script>
 
   <script>
 
     function show(a) {
-      document.querySelector('.text02').value = a;
+      document.querySelector('#category-select').value = a;
     }
     const dropdown = document.querySelector('.dropdown');
     dropdown.onclick = () => {

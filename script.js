@@ -26,10 +26,10 @@ const groupInput = document.querySelector("#group-input");
 const typeInput = document.querySelector("#type-input");
 const tabLinks = document.querySelectorAll(".tab-link");
 const tabContents = document.querySelectorAll(".tab-content");
-
+//console.log(categorySelect)
 for (const category of Object.keys(categories)) {
   const option = new Option(category, category);
-  categorySelect.add(option);
+  //categorySelect.add(option);
 }
 groupInput.disabled = true;
 
@@ -64,7 +64,7 @@ groupInput.addEventListener("change", () => {
 });
 
 typeInput.addEventListener("change", () => {
-  tabContents.forEach((tabContent) => {
+  tabContents.forEach((tabContents) => {
     tabContent.classList.remove("active");
   });
 
@@ -82,7 +82,7 @@ typeInput.addEventListener("change", () => {
 });
 
 class option {
-  constructor({ category, categoryId, groupId, group,  type }) {
+  constructor({ categoryId, category, groupId, group,  type }) {
     this.category = category;
     this.group = group;
     this.type = type;
