@@ -1,5 +1,13 @@
 {
     "githubPullRequests.ignoredPullRequestBranches": [
         "Production"
+    ],
+    "cSpell.words": [
+        "Isogen",
+        "Megacyte",
+        "Nocxium",
+        "Spodumain",
+        "Tritanium",
+        "Zydrine"
     ]
 }
