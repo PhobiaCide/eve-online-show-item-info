@@ -184,6 +184,7 @@
 
 .tab-link
 {
+ max-width: 20rem;
 	background-color:rgba(151,151,201,1);
 	border:4px outset silver;
 	border-bottom:none;
